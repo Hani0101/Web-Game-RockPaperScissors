@@ -1,0 +1,54 @@
+body {
+  background-color: #CCC;
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 10rem; /*size of our emojis*/
+  transition: 300ms; /*making the transition of the style smoother, it will take 300ms to make the transition in this case*/
+
+}
+
+
+
+
+
+
+/* hover and transform scale will be used to transfrom the style of the emojis when we point at them */
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.results {
+  margin-top: 1rem;
+  font-size: 5rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  margin-left: .1rem;
+  font-size: 5rem;
+  color: #333;
+}
+
+.result-selection {
+  opacity: .5;  /* it will blend the result a little bit with the background */
+  font-size: 5rem;
+}
+
+.result-selection.winner {
+  opacity: 1; /*shwoing the winner with no blend*/
+  font-size: 5rem; /*showing the winner as larger font*/
+} 
